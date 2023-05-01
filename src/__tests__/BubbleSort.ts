@@ -1,10 +1,12 @@
 import bubble_sort from "@code/BubbleSort";
 
 test("bubble-sort", function () {
-    const arr = [9, 3, 7, 4, 69, 420, 42];
+    const n = 100000;
+    // Create an array filled with random integers.
+    const arr = Array.from({ length: n }, () => Math.floor(Math.random() * 50000));
 
     debugger;
     bubble_sort(arr);
-    expect(arr).toEqual([3, 4, 7, 9, 42, 69, 420]);
+    expect(arr).toEqual([...arr].sort((a, b) => a - b));
 });
 

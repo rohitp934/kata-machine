@@ -25,7 +25,9 @@ test("queue", function () {
 
     // just wanted to make sure that I could not blow up myself when i remove
     // everything
+    console.log(list);
     list.enqueue(69);
+    console.log(list);
     expect(list.peek()).toEqual(69);
     expect(list.length).toEqual(1);
 });
