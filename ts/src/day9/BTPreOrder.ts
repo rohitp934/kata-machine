@@ -4,15 +4,15 @@ export default function pre_order_search(head: BinaryNode<number>): number[] {
   return pre_order_list;
 }
 
-function pre_order(head: BinaryNode<number>, pre_order_list: number[]): void {
-  if (!head) return;
+function pre_order(curr: BinaryNode<number>, path: number[]): void {
+  if (!curr) return;
 
-  pre_order_list.push(head.value);
+  path.push(curr.value);
 
-  if (head.left) {
-    pre_order(head.left, pre_order_list);
+  if (curr.left) {
+    pre_order(curr.left, path);
   }
-  if (head.right) {
-    pre_order(head.right, pre_order_list);
+  if (curr.right) {
+    pre_order(curr.right, path);
   }
 }
