@@ -6,14 +6,14 @@ export default function in_order_search(head: BinaryNode<number>): number[] {
 }
 
 
-function in_order(head: BinaryNode<number>, in_order_list: number[]): void {
-  if (!head) return;
+function in_order(curr: BinaryNode<number>, path: number[]): void {
+  if (!curr) return;
 
-  if (head.left) {
-    in_order(head.left, in_order_list);
+  if (curr.left) {
+    in_order(curr.left, path);
   }
-  in_order_list.push(head.value);
-  if (head.right) {
-    in_order(head.right, in_order_list);
+  path.push(curr.value);
+  if (curr.right) {
+    in_order(curr.right, path);
   }
 }

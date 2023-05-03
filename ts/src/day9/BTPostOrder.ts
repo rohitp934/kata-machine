@@ -7,14 +7,14 @@ export default function post_order_search(head: BinaryNode<number>): number[] {
 
 
 
-function post_order(head: BinaryNode<number>, post_order_list: number[]): void {
-  if (!head) return;
+function post_order(curr: BinaryNode<number>, path: number[]): void {
+  if (!curr) return;
 
-  if (head.left) {
-    post_order(head.left, post_order_list);
+  if (curr.left) {
+    post_order(curr.left, path);
   }
-  if (head.right) {
-    post_order(head.right, post_order_list);
+  if (curr.right) {
+    post_order(curr.right, path);
   }
-  post_order_list.push(head.value);
+  path.push(curr.value);
 }
