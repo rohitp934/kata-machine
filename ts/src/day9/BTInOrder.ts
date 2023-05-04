@@ -5,7 +5,6 @@ export default function in_order_search(head: BinaryNode<number>): number[] {
   return in_order_list;
 }
 
-
 function in_order(curr: BinaryNode<number>, path: number[]): void {
   if (!curr) return;
 

@@ -13,10 +13,10 @@ module.exports = {
     // "ArrayList",
     // "MazeSolver",
     // "QuickSort",
-    "BTPreOrder",
-    "BTInOrder",
-    "BTPostOrder",
-    // "BTBFS",
+    // "BTPreOrder",
+    // "BTInOrder",
+    // "BTPostOrder",
+    "BTBFS",
     // "CompareBinaryTrees",
     // "DFSOnBST",
     // "DFSGraphList",
@@ -25,5 +25,4 @@ module.exports = {
     // "Map",
     // "MinHeap",
   ],
-}
-
+};
