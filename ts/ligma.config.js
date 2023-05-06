@@ -18,11 +18,11 @@ module.exports = {
     // "BTPostOrder",
     // "BTBFS",
     // "CompareBinaryTrees",
-    "DFSOnBST",
+    // "DFSOnBST",
     // "DFSGraphList",
     // "Trie",
     // "BFSGraphMatrix",
     // "Map",
-    // "MinHeap",
+    "MinHeap",
   ],
 };
