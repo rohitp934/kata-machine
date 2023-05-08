@@ -19,10 +19,10 @@ module.exports = {
     // "BTBFS",
     // "CompareBinaryTrees",
     // "DFSOnBST",
-    // "DFSGraphList",
+    "DFSGraphList",
     // "Trie",
-    // "BFSGraphMatrix",
+    "BFSGraphMatrix",
     // "Map",
-    "MinHeap",
+    // "MinHeap",
   ],
 };
