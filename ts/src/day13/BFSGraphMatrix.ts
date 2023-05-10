@@ -4,7 +4,7 @@ export default function bfs(
   needle: number,
 ): number[] | null {
   const q: number[] = [];
-  // Seen array used to hold the parent node of the current node.
+  // Seen array used to know if this node is visited.
   const seen: boolean[] = new Array(graph.length).fill(false);
   // Prev array used to know if we have visited this node or not.
   // Also used to walk back from needle (if it was walkable) to the source.
@@ -19,14 +19,15 @@ export default function bfs(
     if (curr === needle) break;
 
     // Just use for loops instead, would cause problems in recursion otherwise.
-    graph[curr].forEach((child, i) => {
+    for (let i = 0; i < graph[curr].length; i++) {
+      const child = graph[curr][i];
       if (child) {
-        if (seen[i]) return;
+        if (seen[i]) continue;
         seen[i] = true;
         prev[i] = curr;
         q.push(i);
-      } 
-    })
+      }
+    }
   }
 
   if (prev[needle] === -1) return null;
