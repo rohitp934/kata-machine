@@ -1,7 +1,7 @@
 module.exports = {
   dsa: [
     // "DFSOnBST",
-    // "LRU",
+    "LRU",
     // "LinearSearchList",
     // "BinarySearchList",
     // "TwoCrystalBalls",
@@ -24,6 +24,6 @@ module.exports = {
     // "BFSGraphMatrix",
     // "Map",
     // "MinHeap",
-    "DijkstraList",
+    // "DijkstraList",
   ],
 };
